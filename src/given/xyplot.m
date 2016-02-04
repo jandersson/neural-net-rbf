@@ -1,4 +1,4 @@
-function mserr=xyplot(desired,estimated,titletext);
+function mserr=xyplot(desired,estimated,titletext)
 % rmserr=XYPLOT(desired,estimated,title)
 % Plots desired and estimated values on x versus y axis
 % The root mean square error is returned

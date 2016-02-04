@@ -30,8 +30,8 @@ clf;
 %plotdata(pd,data,p1,p2);
 %data=read('cluster');
 plotdata2(h, data);
-xlim([1 7]);
-ylim([1 7]);
+xlim([0 1]);
+ylim([0 1]);
 
 global m;
 [m var]=initrbf(units,cols(data),dmin,dmax);
