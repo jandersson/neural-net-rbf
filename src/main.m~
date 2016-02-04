@@ -33,9 +33,13 @@ diter
 %% 5.0 RBF Placement by Self Organization
 plotinit; %Initialize the plot parameters
 data=read('cluster'); %Read datapoints from the data file
-units=5; %Number of RBF units
+units=3; %Number of RBF units
 vqinit; %Opens a plot window, positions the RBF units randomly in the space defined by the data and plots the data points and RBF units.
-singlewinner=0; %Flag specifying the use of the 'winner take all' strategy. A false flag will allow all units to move.
+singlewinner=1; %Flag specifying the use of the 'winner take all' strategy. A false flag will allow all units to move.
+for i = 1:5
+    vqstep;  
+    vqiter;
+end
 
-%Using EM
-vqiter;
+
+
