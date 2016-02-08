@@ -21,21 +21,21 @@ ymin=dmin-(dmax-dmin)*border;
 ymax=dmax+(dmax-dmin)*border;
 pointsize=abs((dmax-dmin)/250);
 %pd=plotopen('lab6',xmin,ymin,xmax,ymax);
-h=figure();
+%h=figure();
 %plotbuffer(pd);
 %ploterase(pd);
-figure(h);
+%figure(h);
 clf;
 % global border,dmin,dmax,xmin,xmax,pointsize,pd;
 %plotdata(pd,data,p1,p2);
 %data=read('cluster');
-plotdata2(h, data);
+%plotdata2(h, data);
 xlim([0 1]);
 ylim([0 1]);
 
 global m;
 [m var]=initrbf(units,cols(data),dmin,dmax);
-plotrbf2(h,m,var,p1,p2);
+%plotrbf2(h,m,var,p1,p2);
 %plotrefresh(pd);
 
 etha=var*0+1/units;

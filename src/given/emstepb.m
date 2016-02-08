@@ -45,8 +45,8 @@ var=((var./etha)-mulrows(m,m))/dims;
 etha=etha/sum(etha);
 
 %ploterase(pd);
-clf;
-plotdata2(h,data);
-plotrbf2(h,m,var,p1,p2);
+%clf;
+%plotdata2(h,data);
+%plotrbf2(h,m,var,p1,p2);
 %plotlines(pd,m,oldm,p1,p2);
 %plotrefresh(pd);
